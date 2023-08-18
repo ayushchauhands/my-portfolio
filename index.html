@@ -3,16 +3,84 @@
   <head>
     <title>My HTML portfolio</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: whitesmoke;
+      color: black;
+    }
+
+    a {
+      color: salmon;
+      text-decoration: none;
+    }
+
+    .main-heading {
+      font-size: 80px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .main-container {
+      width: 50vw;
+      height: 50vh;
+      margin: 30px auto;
+    }
+
+    .section-heading {
+      margin: 5px 0;
+    }
+
+    .summary-section {
+      padding: 20px;
+    }
+
+    .navigation-container {
+      padding: 10px 35px;
+    }
+
+    .navigation-container > li,
+    .default-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  </style>
+
   <body>
-    <h1>Intro</h1>
-    <p>HTML is a markup language that tells browser what evrything is</p>
-    <h1>Summary notes of what i have learn</h1>
-    <h2><a href="strong_and_emphasis.html">Strong and Emphasis</a></h2>
-    <h2><a href="anchors_and_attributes.html">Anchors and Attributes</a></h2>
-    <h2><a href="css.html">Introduction to CSS</a></h2>
-    <h2><a href="software_lifecycle.html">Practice Assignment 1</a></h2>
-    <h2><a href="list.html">List</a></h2>
-    <h2><a href="images/index.html">Images</a></h2>
-    <h2><a href="planets/planet.html">Practice Assignment 2</a></h2>
+    <main class="main-container">
+      <h1 class="main-heading">Intro</h1>
+      <artcicle>
+        <!-- prettier-ignore -->
+        <header class="summary-section">
+        <h3>Summary</h3>
+        <p class="default-text">a summary of the things i've learnt so far</p>
+        <p class="default-text"> HTML is a markup language that tells browser what evrything is </p>
+      </header>
+
+        <h3 class="section-heading">Basics</h3>
+        <!-- prettier-ignore -->
+        <ul class="navigation-container">
+        <li> <a href="pages/basics/strong_and_emphasis.html">Strong and Emphasis</a> </li>
+        <li> <a href="pages/basics/anchors_and_attributes.html">Anchors and Attributes</a> </li>
+        <li> <a href="pages/basics/css.html">Introduction to CSS</a> </li>
+        <li> <a href="pages/basics/software_lifecycle.html">Practice Assignment 1</a> </li>
+        <li> <a href="pages/basics/list.html">List</a> </li>
+        <li> <a href="pages/basics/images.html">Images</a> </li>
+      </ul>
+
+        <h3 class="section-heading">Solar System</h3>
+        <ul class="navigation-container">
+          <li>
+            <a href="pages/solar-system/planet.html">Practice Assignment 2</a>
+          </li>
+        </ul>
+      </artcicle>
+    </main>
   </body>
 </html>
